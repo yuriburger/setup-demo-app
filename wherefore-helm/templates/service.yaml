@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: angular-app-service
+  labels: {{- include "wherefore.labels" . | nindent 4}}
+spec:
+  type: {{.Values.service.type}}
+  ports:
+    - port: {{.Values.service.port}}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector: {{- include "wherefore.selectorLabels" . | nindent 4}}

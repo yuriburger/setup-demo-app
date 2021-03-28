@@ -1,0 +1,12 @@
+dependencies:
+- name: mongodb
+  repository: https://charts.bitnami.com/bitnami
+  version: 10.7.0
+- name: ingress-nginx
+  repository: https://kubernetes.github.io/ingress-nginx
+  version: 3.25.0
+- name: api-springboot
+  repository: ""
+  version: 1.0.0
+digest: sha256:9dceb1f1393ff34d166dc8dd809006ab56d0489f7a902c32af49d7f2508a164b
+generated: "2021-03-28T21:28:13.4600663+02:00"
